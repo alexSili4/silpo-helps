@@ -1,6 +1,6 @@
 .hero-section {
   padding-top: 45px;
-  padding-bottom: 94px;
+  padding-bottom: 147px;
   overflow: hidden;
 }
 
@@ -16,8 +16,6 @@
 
 .hero-desc {
   margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
   color: #37342b;
   font-family: Manrope;
   font-size: 20px;
@@ -26,135 +24,199 @@
   text-align: center;
 }
 
-.hero-basket-img-wrap {
+.hero-results-list {
   position: relative;
-  width: 154px;
-  margin-top: 112px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 247px;
 }
 
-.hero-top-plus-img {
-  position: absolute;
-  top: -17px;
-  left: 69px;
-  width: 22px;
+.hero-results-card-wrap {
+  position: relative;
 }
 
-.hero-left-plus-img {
-  position: absolute;
-  top: 3px;
-  left: 34px;
-  width: 15px;
+.hero-results-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 187px;
+  padding: 12px 15px 13px;
+  border-radius: 19px;
 }
 
-.hero-bottom-plus-img {
-  position: absolute;
-  top: 3px;
-  left: 49px;
-  width: 38px;
+.hero-results-card-text-title {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 29.86px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.hero-right-plus-img {
-  position: absolute;
-  top: -10px;
-  left: 89px;
-  width: 38px;
+.hero-results-card-text-desc {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 12.44px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.hero-left-hand-mobile-icon {
+.hero-results-card-wrap.left-card {
   position: absolute;
-  top: 253px;
-  right: 105px;
+  top: -19px;
+  left: 12px;
+}
+
+.hero-results-card-wrap.right-card {
+  position: absolute;
+  top: -154px;
+  left: 92px;
+}
+
+.hero-results-card.left-card {
+  background-color: #ff7029;
+  transform: rotate(-8.96deg);
+}
+
+.hero-results-card.center-card {
+  background-color: #ff9c29;
+}
+
+.hero-results-card.right-card {
+  background-color: #ff7029;
+  transform: rotate(8.35deg);
+}
+
+.left-hand-mobile-icon {
+  position: absolute;
+  top: -238px;
+  left: -377px;
   display: block;
-  width: 404px;
-  height: 280px;
+  width: 479px;
+  height: 317px;
 }
 
-.hero-left-hand-desk-icon {
-  display: none;
-}
-
-.hero-right-hand-mobile-icon {
+.center-hand-mobile-icon {
   position: absolute;
-  top: 188px;
-  left: 114px;
+  top: 91px;
+  left: 21px;
   display: block;
-  width: 387px;
-  height: 212px;
+  width: 168px;
+  height: 241px;
 }
 
-.hero-right-hand-desk-icon {
-  display: none;
+.right-hand-mobile-icon {
+  position: absolute;
+  top: -196px;
+  left: 126px;
+  display: block;
+  width: 503px;
+  height: 263px;
 }
 
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1372px) {
   .hero-section {
-    padding-top: 70px;
-    padding-bottom: 164px;
+    padding-top: 69px;
+    padding-bottom: 250px;
   }
 
   .hero-title {
-    font-size: 98px;
+    font-size: 100px;
     line-height: 1;
   }
 
   .hero-desc {
-    width: 482px;
+    width: 408px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .hero-basket-img-wrap {
-    width: 336px;
-    margin-top: 216px;
+  .hero-results-list {
+    position: relative;
+    display: block;
+    margin-top: 60px;
   }
 
-  .hero-top-plus-img {
-    top: -36px;
-    left: 150px;
-    width: 49px;
+  .hero-results-card-wrap.center-card {
+    margin-left: 505px;
   }
 
-  .hero-left-plus-img {
-    top: 6px;
-    left: 74px;
-    width: 33px;
+  .hero-results-card {
+    gap: 27px;
+    width: 300px;
+    padding: 20px 24px;
+    border-radius: 30px;
   }
 
-  .hero-bottom-plus-img {
-    top: 6px;
-    left: 106px;
-    width: 83px;
+  .hero-results-card-text-title {
+    font-size: 48px;
   }
 
-  .hero-right-plus-img {
-    top: -22px;
-    left: 195px;
-    width: 83px;
+  .hero-results-card-text-desc {
+    font-size: 20px;
   }
 
-  .hero-left-hand-mobile-icon {
+  .hero-results-card-wrap.left-card {
+    position: absolute;
+    top: 82px;
+    left: 268px;
+  }
+
+  .hero-results-card-wrap.right-card {
+    position: absolute;
+    top: 65px;
+    left: 791px;
+  }
+
+  .left-hand-desk-icon {
+    position: absolute;
+    top: -383px;
+    left: -606px;
+    display: block;
+    width: 771px;
+    height: 509px;
+  }
+
+  .center-hand-desk-icon {
+    position: absolute;
+    top: 146px;
+    left: 34px;
+    display: block;
+    width: 271px;
+    height: 387px;
+  }
+
+  .right-hand-desk-icon {
+    position: absolute;
+    top: -316px;
+    left: 203px;
+    display: block;
+    width: 809px;
+    height: 422px;
+  }
+
+  .left-hand-mobile-icon {
     display: none;
   }
 
-  .hero-left-hand-desk-icon {
-    position: absolute;
-    top: 209px;
-    right: 450px;
-    width: 1056px;
-    height: 659px;
-    display: block;
-  }
-
-  .hero-right-hand-mobile-icon {
+  .center-hand-mobile-icon {
     display: none;
   }
 
-  .hero-right-hand-desk-icon {
-    position: absolute;
-    top: 98px;
-    left: 477px;
-    display: block;
-    width: 930px;
-    height: 484px;
+  .right-hand-mobile-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1371px) {
+  .left-hand-desk-icon {
+    display: none;
+  }
+
+  .center-hand-desk-icon {
+    display: none;
+  }
+
+  .right-hand-desk-icon {
+    display: none;
   }
 }
