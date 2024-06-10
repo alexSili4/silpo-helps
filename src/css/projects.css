@@ -142,4 +142,7 @@
 }
 
 @media screen and (max-width: 1371px) {
+  .projects-list {
+    display: none;
+  }
 }

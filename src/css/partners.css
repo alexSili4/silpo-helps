@@ -1,0 +1,233 @@
+.partners-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #7ac76b;
+  overflow: hidden;
+}
+
+.partners-section-title {
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-list:first-of-type {
+  margin-top: 60px;
+}
+
+.partners-list {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.partners-list.top {
+  animation: text 10s infinite linear;
+}
+
+.partners-list.center {
+  animation: text-reverse 10s infinite linear;
+}
+
+.partners-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 106px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.partners-icon {
+  fill: #fffef7;
+}
+
+.partners-icon.vodafone {
+  width: 76px;
+  height: 76px;
+}
+
+.partners-icon.birds {
+  width: 76px;
+  height: 76px;
+}
+
+.partners-icon.city24 {
+  width: 56px;
+  height: 19px;
+}
+
+.partners-icon.united24 {
+  width: 76px;
+  height: 7px;
+}
+
+.partners-icon.wog {
+  width: 59px;
+  height: 18px;
+}
+
+.partners-icon.drones {
+  width: 76px;
+  height: 76px;
+}
+
+.partners-icon.sun {
+  width: 76px;
+  height: 76px;
+}
+
+.partners-icon.monobank {
+  width: 76px;
+  height: 76px;
+}
+
+.partners-icon.come-back-alive {
+  width: 66px;
+  height: 34px;
+}
+
+.partners-icon.dou {
+  width: 46px;
+  height: 23px;
+}
+
+.partners-icon.unite {
+  width: 60px;
+  height: 15px;
+}
+
+.partners-icon.okko {
+  width: 35px;
+  height: 47px;
+}
+
+.partners-icon.new-post {
+  width: 76px;
+  height: 76px;
+}
+
+@keyframes text {
+  0% {
+    transform: translate(100vw, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes text-reverse {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(100vw, 0);
+  }
+}
+
+@media screen and (min-width: 1372px) {
+  .partners-section {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+
+  .partners-section-title {
+    font-size: 42px;
+  }
+
+  .partners-list:first-of-type {
+    margin-top: 88px;
+  }
+
+  .partners-list {
+    gap: 14px;
+  }
+
+  .partners-card {
+    width: 212px;
+    height: 212px;
+  }
+
+  .partners-icon.vodafone {
+    width: 151px;
+    height: 43px;
+  }
+
+  .partners-icon.birds {
+    width: 79px;
+    height: 79px;
+  }
+
+  .partners-icon.city24 {
+    width: 112px;
+    height: 37px;
+  }
+
+  .partners-icon.city24 {
+    width: 112px;
+    height: 37px;
+  }
+
+  .partners-icon.united24 {
+    width: 153px;
+    height: 14px;
+  }
+
+  .partners-icon.wog {
+    width: 117px;
+    height: 36px;
+  }
+
+  .partners-icon.drones {
+    width: 153px;
+    height: 28px;
+  }
+
+  .partners-icon.sun {
+    width: 153px;
+    height: 28px;
+  }
+
+  .partners-icon.monobank {
+    width: 143px;
+    height: 32px;
+  }
+
+  .partners-icon.come-back-alive {
+    width: 132px;
+    height: 67px;
+  }
+
+  .partners-icon.dou {
+    width: 92px;
+    height: 45px;
+  }
+
+  .partners-icon.unite {
+    width: 119px;
+    height: 29px;
+  }
+
+  .partners-icon.okko {
+    width: 70px;
+    height: 94px;
+  }
+
+  .partners-icon.new-post {
+    width: 124px;
+    height: 44px;
+  }
+}
