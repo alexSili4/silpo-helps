@@ -14,29 +14,15 @@
   text-align: center;
 }
 
-.partners-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .partners-list:first-of-type {
   margin-top: 60px;
 }
 
 .partners-list {
-  align-self: flex-start;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
-}
-
-.partners-list.top {
-  animation: text 10s infinite linear;
-}
-
-.partners-list.center {
-  animation: text-reverse 10s infinite linear;
 }
 
 .partners-card {
