@@ -14,10 +14,6 @@
   text-align: center;
 }
 
-.partners-list:first-of-type {
-  margin-top: 60px;
-}
-
 .partners-list {
   display: flex;
   align-items: center;
@@ -199,35 +195,30 @@
 }
 
 @media screen and (max-width: 1371px) {
-  .partners-list {
-    display: inline-flex;
+  .partners-list-container.top {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partners-list-wrap.top {
+    display: flex;
+    width: 200%;
+    animation: text 10s linear infinite;
   }
 
   .partners-list.top {
-    animation: text 10s infinite linear;
-  }
-
-  .partners-list.center {
-    animation: text-reverse 10s infinite linear;
+    justify-content: space-between;
+    width: 100%;
   }
 
   @keyframes text {
     0% {
-      transform: translate(100vw, 0);
+      transform: translateX(0%);
     }
 
     100% {
-      transform: translate(-100%, 0);
-    }
-  }
-
-  @keyframes text-reverse {
-    0% {
-      transform: translate(-100%, 0);
-    }
-
-    100% {
-      transform: translate(100vw, 0);
+      transform: translateX(-50%);
     }
   }
 }
