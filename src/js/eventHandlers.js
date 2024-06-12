@@ -28,19 +28,103 @@ refs.backdrop.forEach((item) => {
 
 const isHiddenClassName = 'is-hidden';
 
-function onProjectArmorBtnClick() {
+function onProjectArmorBtnClick(e) {
+  e.currentTarget.blur();
+  toggleShowArmorModalWin();
+
+  const isHidden =
+    refs.projectArmorModalWin.classList.contains(isHiddenClassName);
+
+  if (isHidden) {
+    window.removeEventListener('keydown', hideProjectArmorModalWin);
+  } else {
+    window.addEventListener('keydown', hideProjectArmorModalWin);
+  }
+}
+
+function hideProjectArmorModalWin(e) {
+  if (e.code === 'Escape') {
+    toggleShowArmorModalWin();
+    window.removeEventListener('keydown', hideProjectArmorModalWin);
+  }
+}
+
+function toggleShowArmorModalWin() {
   refs.projectArmorModalWin.classList.toggle(isHiddenClassName);
 }
 
-function onProjectArtemsilBtnClick() {
+function onProjectArtemsilBtnClick(e) {
+  e.currentTarget.blur();
+  toggleShowArtemsilModalWin();
+
+  const isHidden =
+    refs.projectArtemsilModalWin.classList.contains(isHiddenClassName);
+
+  if (isHidden) {
+    window.removeEventListener('keydown', hideProjectArtemsilModalWin);
+  } else {
+    window.addEventListener('keydown', hideProjectArtemsilModalWin);
+  }
+}
+
+function hideProjectArtemsilModalWin(e) {
+  if (e.code === 'Escape') {
+    toggleShowArtemsilModalWin();
+    window.removeEventListener('keydown', hideProjectArtemsilModalWin);
+  }
+}
+
+function toggleShowArtemsilModalWin() {
   refs.projectArtemsilModalWin.classList.toggle(isHiddenClassName);
 }
 
-function onProjectMoneyBtnClick() {
+function onProjectMoneyBtnClick(e) {
+  e.currentTarget.blur();
+  toggleShowMoneyModalWin();
+
+  const isHidden =
+    refs.projectMoneyModalWin.classList.contains(isHiddenClassName);
+
+  if (isHidden) {
+    window.removeEventListener('keydown', hideProjectMoneyModalWin);
+  } else {
+    window.addEventListener('keydown', hideProjectMoneyModalWin);
+  }
+}
+
+function hideProjectMoneyModalWin(e) {
+  if (e.code === 'Escape') {
+    toggleShowMoneyModalWin();
+    window.removeEventListener('keydown', hideProjectMoneyModalWin);
+  }
+}
+
+function toggleShowMoneyModalWin() {
   refs.projectMoneyModalWin.classList.toggle(isHiddenClassName);
 }
 
-function onProjectMessageBtnClick() {
+function onProjectMessageBtnClick(e) {
+  e.currentTarget.blur();
+  toggleShowMessageModalWin();
+
+  const isHidden =
+    refs.projectMessageModalWin.classList.contains(isHiddenClassName);
+
+  if (isHidden) {
+    window.removeEventListener('keydown', hideProjectMessageModalWin);
+  } else {
+    window.addEventListener('keydown', hideProjectMessageModalWin);
+  }
+}
+
+function hideProjectMessageModalWin(e) {
+  if (e.code === 'Escape') {
+    toggleShowMessageModalWin();
+    window.removeEventListener('keydown', hideProjectMessageModalWin);
+  }
+}
+
+function toggleShowMessageModalWin() {
   refs.projectMessageModalWin.classList.toggle(isHiddenClassName);
 }
 
@@ -49,5 +133,9 @@ function onBackdropClick(e) {
     return;
   }
 
-  e.currentTarget.classList.add(isHiddenClassName);
+  e.currentTarget.parentNode.classList.add(isHiddenClassName);
+  window.removeEventListener('keydown', hideProjectArmorModalWin);
+  window.removeEventListener('keydown', hideProjectArtemsilModalWin);
+  window.removeEventListener('keydown', hideProjectMoneyModalWin);
+  window.removeEventListener('keydown', hideProjectMessageModalWin);
 }

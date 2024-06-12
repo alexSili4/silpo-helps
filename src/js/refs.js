@@ -24,6 +24,7 @@ const refs = {
     '.js-message-modal-win-close-btn'
   ),
   backdrop: document.querySelectorAll('.js-backdrop'),
+  backdropWrap: document.querySelectorAll('.js-backdrop-wrap'),
 };
 
 export default refs;

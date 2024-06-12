@@ -44,6 +44,7 @@
 }
 
 .projects-card-link-icon-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,6 +52,19 @@
   height: 56px;
   border-radius: 50%;
   background-color: var(--white-color);
+  overflow: hidden;
+}
+
+.project-icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--transition-duration-and-func);
 }
 
 .projects-card-link-icon {
@@ -77,6 +91,48 @@
 .projects-card-link-icon.message {
   width: 30px;
   height: 31px;
+}
+
+.projects-card-link-nav-arrow-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.projects-card-link-nav-arrow {
+  width: 35px;
+  height: 35px;
+}
+
+.projects-card-link-nav-arrow.armor {
+  fill: #64b154;
+}
+
+.projects-card-link-nav-arrow.artemsil {
+  fill: #876dc7;
+}
+
+.projects-card-link-nav-arrow.money {
+  fill: #ff7029;
+}
+
+.projects-card-link-nav-arrow.message {
+  fill: #86b0e8;
+}
+
+.projects-card-link:is(:hover, :focus) .project-icon-wrap {
+  transform: translateX(100%);
+}
+
+.projects-card-link:is(:hover, :focus) .projects-card-link-nav-arrow-wrap {
+  transform: translateX(0%);
 }
 
 .projects-card-link-title {
