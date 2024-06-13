@@ -67,13 +67,12 @@
 
   .hero-bg-desk-icon {
     position: absolute;
-    top: 7px;
-    left: calc(50% + 100px);
+    top: -230px;
     left: 50%;
     display: block;
-    width: 2299px;
-    max-width: 2299px;
-    height: 871px;
+    width: 3655px;
+    max-width: 3655px;
+    height: 1099px;
     transform: translateX(-50%);
   }
 
