@@ -105,6 +105,45 @@
   height: 76px;
 }
 
+.front-u {
+  width: 76px;
+}
+
+.feel {
+  width: 50px;
+}
+
+.club-of-virtues {
+  width: 76px;
+}
+
+.uanimal {
+  width: 50px;
+}
+
+.your-support {
+  width: 40px;
+}
+
+.mastercard {
+  width: 76px;
+  height: auto;
+}
+
+.prytula {
+  width: 76px;
+  height: auto;
+}
+
+.tabletochki {
+  width: 76px;
+}
+
+.leleka {
+  width: 76px;
+  height: auto;
+}
+
 @media screen and (min-width: 1372px) {
   .partners-section {
     padding-top: 100px;
@@ -204,6 +243,51 @@
 
   .partners-mobile-list {
     display: none;
+  }
+
+  .front-u {
+    width: 140px;
+    height: 49px;
+  }
+
+  .feel {
+    width: 87px;
+    height: 76px;
+  }
+
+  .club-of-virtues {
+    width: 153px;
+    height: 19px;
+  }
+
+  .uanimal {
+    width: 75px;
+    height: 100px;
+  }
+
+  .your-support {
+    width: 62px;
+    height: 100px;
+  }
+
+  .mastercard {
+    width: 92px;
+    height: 72px;
+  }
+
+  .prytula {
+    width: 182px;
+    height: 55px;
+  }
+
+  .tabletochki {
+    width: 132px;
+    height: 67px;
+  }
+
+  .leleka {
+    width: 120px;
+    height: 149px;
   }
 }
 
