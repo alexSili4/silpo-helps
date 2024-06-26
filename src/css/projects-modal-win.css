@@ -1,16 +1,4 @@
-body:has(.js-project-artemsil-modal-win:not(.is-hidden)) {
-  overflow: hidden;
-}
-
-body:has(.js-project-armor-modal-win:not(.is-hidden)) {
-  overflow: hidden;
-}
-
-body:has(.js-project-money-modal-win:not(.is-hidden)) {
-  overflow: hidden;
-}
-
-body:has(.js-project-message-modal-win:not(.is-hidden)) {
+body:has(.js-project-modal-win:not(.is-hidden)) {
   overflow: hidden;
 }
 
@@ -22,6 +10,8 @@ body:has(.js-project-message-modal-win:not(.is-hidden)) {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  transition: opacity var(--transition-duration-and-func),
+    visibility var(--transition-duration-and-func);
 }
 
 .backdrop {
