@@ -25,7 +25,6 @@ body:has(.js-project-modal-win:not(.is-hidden)) {
 
 .modal-win {
   position: relative;
-
   height: 100%;
   background-color: #f6f4ee;
 }
