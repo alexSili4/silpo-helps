@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
 body {
   background-color: var(--body-color);
 }
